@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="forgotPass.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+  <title>UConn Cyber Security Club</title>
+  <meta name="description" content="Hack Me!">
+
+</head>
+
+<body>
+  <div class="panel">
+  <form action="admin.php" method="get">
+    
+    <div class="imgcontainer">
+      <img src="siberian-husky.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container" style="color:#b3cde0">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <input type="hidden" name="isAdmin" value="False">
+      
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember">Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#005b96">
+      <button type="button" class="cancelbtn"> Cancel</button>
+      <!-- Haven't finished the forgot passwd page but I have the js functions working -->
+      <span class="psw">Forgot <a href="recover.html">password?</a></span>
+    </div>
+  
+  </form>
+  </div>
+
+</body>
+</html>
